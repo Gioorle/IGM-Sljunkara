@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGM Sljuncara Trstenik - Kvalitetan sljunak za gradnju</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo-dark.svg" alt="IGM Sljuncara Trstenik" class="logo">
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Početna</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#o-nama" class="nav-link">O nama</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projekti" class="nav-link">Projekti</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#proizvodi" class="nav-link">Proizvodi</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#mehanizacija" class="nav-link">Mehanizacija</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#razvoj" class="nav-link">Održivi Razvoj</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#kontakt" class="nav-link">Kontakt</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-video">
+            <video autoplay muted loop>
+                <source src="/placeholder.mp4?height=1080&width=1920&query=construction site with gravel and machinery" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Kvalitetan sljunak za gradnju bez kompromisa</h1>
+            <p class="hero-description">
+                Gradimo temelje poverenja već decenijama. Regionalni smo lider u proizvodnji građevinskog peska i sljunka, 
+                a naš tim čine stručni ljudi posvećeni kvalitetu, održivom razvoju i zaštiti životne sredine. 
+                Sa nama, svaki projekat počinje sigurnim osnovama.
+            </p>
+            <a href="#kontakt" class="cta-button">Kontaktirajte nas</a>
+        </div>
+    </section>
+
+    <!-- Unique Selling Points -->
+    <section class="usp-section">
+        <div class="container">
+            <div class="usp-grid">
+                <div class="usp-item">
+                    <div class="usp-icon">🏗️</div>
+                    <h3>Globalni trendovi</h3>
+                    <p>Pratimo globalne trendove u pogledu ulaganja u mehanizaciju</p>
+                </div>
+                <div class="usp-item">
+                    <div class="usp-icon">🌱</div>
+                    <h3>Briga za okoliš</h3>
+                    <p>Posebnu pozornost pridajemo brizi za okoliš i lokalnu zajednicu</p>
+                </div>
+                <div class="usp-item">
+                    <div class="usp-icon">🏆</div>
+                    <h3>45+ godina tradicije</h3>
+                    <p>Ponosni smo na više od 45 godina tradicije i iskustva</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projekti" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Projekti</h2>
+            <p class="section-description">
+                IGM Sljuncara Trstenik sudjeluje u brojnim domaćim i regionalnim građevinskim projektima 
+                kao glavni partner u poslovima isporuke sljunka i sljunčanih materijala.
+            </p>
+            
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-track">
+                        <div class="project-card">
+                            <img src="/placeholder.svg?height=300&width=400" alt="Projekat 1">
+                            <div class="project-content">
+                                <h3>Autoput E-75</h3>
+                                <p>Isporuka visokokvalitetnog sljunka za izgradnju autoputa E-75, deonice Beograd-Niš.</p>
+                                <button class="project-cta" onclick="openProjectDetails(1)">Saznaj više</button>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card">
+                            <img src="/placeholder.svg?height=300&width=400" alt="Projekat 2">
+                            <div class="project-content">
+                                <h3>Most na Zapadnoj Moravi</h3>
+                                <p>Kompletan materijal za fundamente i pristupne saobraćajnice novog mosta.</p>
+                                <button class="project-cta" onclick="openProjectDetails(2)">Saznaj više</button>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card">
+                            <img src="/placeholder.svg?height=300&width=400" alt="Projekat 3">
+                            <div class="project-content">
+                                <h3>Stambeni kompleks "Novi Trstenik"</h3>
+                                <p>Isporuka građevinskog materijala za najveći stambeni kompleks u regionu.</p>
+                                <button class="project-cta" onclick="openProjectDetails(3)">Saznaj više</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-btn prev" onclick="moveCarousel(-1)">‹</button>
+                <button class="carousel-btn next" onclick="moveCarousel(1)">›</button>
+            </div>
+            
+            <div class="projects-main-cta">
+                <a href="projekti.html" class="cta-button secondary">Pogledaj sve projekte</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners-section">
+        <div class="container">
+            <h2 class="section-title">Naši partneri kojima verujemo</h2>
+            <div class="partners-grid">
+                <div class="partner-logo">
+                    <img src="/placeholder.svg?height=80&width=120" alt="Partner 1">
+                </div>
+                <div class="partner-logo">
+                    <img src="/placeholder.svg?height=80&width=120" alt="Partner 2">
+                </div>
+                <div class="partner-logo">
+                    <img src="/placeholder.svg?height=80&width=120" alt="Partner 3">
+                </div>
+                <div class="partner-logo">
+                    <img src="/placeholder.svg?height=80&width=120" alt="Partner 4">
+                </div>
+                <div class="partner-logo">
+                    <img src="/placeholder.svg?height=80&width=120" alt="Partner 5">
+                </div>
+                <div class="partner-logo">
+                    <img src="/placeholder.svg?height=80&width=120" alt="Partner 6">
+                </div>
+                <div class="partner-logo">
+                    <img src="/placeholder.svg?height=80&width=120" alt="Partner 7">
+                </div>
+                <div class="partner-logo">
+                    <img src="/placeholder.svg?height=80&width=120" alt="Partner 8">
+                </div>
+                <div class="partner-logo">
+                    <img src="/placeholder.svg?height=80&width=120" alt="Partner 9">
+                </div>
+                <div class="partner-logo">
+                    <img src="/placeholder.svg?height=80&width=120" alt="Partner 10">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Overview Sections -->
+    <section id="o-nama" class="overview-section">
+        <div class="container">
+            <h2>O nama</h2>
+            <p>IGM Sljuncara Trstenik je vodeće preduzeće u regionu sa više od 45 godina iskustva u proizvodnji i distribuciji visokokvalitetnog sljunka, peska i drugih građevinskih materijala. Naša posvećenost kvalitetu i inovacijama čini nas pouzdanim partnerom za projekte svih veličina.</p>
+            <div class="overview-features">
+                <div class="feature">
+                    <h4>Iskustvo</h4>
+                    <p>Više od 4 decenije rada u industriji</p>
+                </div>
+                <div class="feature">
+                    <h4>Kvalitet</h4>
+                    <p>Sertifikovani materijali prema EU standardima</p>
+                </div>
+                <div class="feature">
+                    <h4>Kapacitet</h4>
+                    <p>Proizvodnja preko 500.000 tona godišnje</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proizvodi" class="overview-section">
+        <div class="container">
+            <h2>Proizvodi</h2>
+            <p>Nudimo širok spektar građevinskih materijala prilagođenih različitim potrebama naših klijenata.</p>
+            <div class="product-preview">
+                <div class="product-item">
+                    <h4>Sljunak različitih frakcija</h4>
+                    <p>0-4mm, 4-8mm, 8-16mm, 16-32mm</p>
+                </div>
+                <div class="product-item">
+                    <h4>Građevinski pesak</h4>
+                    <p>Prirodni i prosejan pesak za sve vrste radova</p>
+                </div>
+                <div class="product-item">
+                    <h4>Drenažni materijali</h4>
+                    <p>Specijalizirani materijali za drenažne sisteme</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="mehanizacija" class="overview-section">
+        <div class="container">
+            <h2>Mehanizacija</h2>
+            <p>Raspolažemo modernom mehanizacijom koja omogućava efikasnu proizvodnju i transport materijala.</p>
+            <div class="machinery-list">
+                <ul>
+                    <li>Postrojenja za separaciju i pranje</li>
+                    <li>Kamioni različitih nosivosti</li>
+                    <li>Bageri i utovarivači</li>
+                    <li>Mobilna postrojenja za separaciju</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="razvoj" class="overview-section">
+        <div class="container">
+            <h2>Održivi Razvoj</h2>
+            <p>Posvećeni smo zaštiti životne sredine i održivom razvoju kroz odgovorne poslovne prakse.</p>
+            <div class="sustainability-points">
+                <div class="sustainability-item">
+                    <h4>Ekološka odgovornost</h4>
+                    <p>Minimizujemo uticaj na životnu sredinu kroz moderne tehnologije</p>
+                </div>
+                <div class="sustainability-item">
+                    <h4>Recikliranje</h4>
+                    <p>Maksimalno iskorišćavanje materijala i smanjenje otpada</p>
+                </div>
+                <div class="sustainability-item">
+                    <h4>Lokalna zajednica</h4>
+                    <p>Aktivno učešće u razvoju lokalne zajednice</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontakt" class="overview-section contact-section">
+        <div class="container">
+            <h2>Kontakt</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Kontakt informacije</h3>
+                    <div class="contact-item">
+                        <strong>Adresa:</strong>
+                        <p>Industrijska zona, Trstenik, Srbija</p>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Telefon:</strong>
+                        <p>+381 37 123 456</p>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Email:</strong>
+                        <p>info@igm-sljuncara.rs</p>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Radno vreme:</strong>
+                        <p>Ponedeljak - Petak: 07:00 - 16:00</p>
+                        <p>Subota: 08:00 - 14:00</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Pošaljite upit</h3>
+                    <form>
+                        <input type="text" placeholder="Ime i prezime" required>
+                        <input type="email" placeholder="Email adresa" required>
+                        <input type="tel" placeholder="Telefon">
+                        <textarea placeholder="Vaša poruka" rows="5" required></textarea>
+                        <button type="submit" class="cta-button">Pošalji poruku</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <img src="logo-white.svg" alt="IGM Sljuncara Trstenik" class="footer-logo">
+                <p>&copy; 2024 IGM Sljuncara Trstenik. Sva prava zadržana.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Details Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeProjectDetails()">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
